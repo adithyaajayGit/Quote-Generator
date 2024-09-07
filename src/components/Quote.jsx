@@ -6,7 +6,6 @@ const Quote = () => {
     const [quote,setQuote]=useState('')
     const [author,setAuthour]=useState('')
 
-
     const fetchrandomQuote=async()=>{
         try{
             const response = await axiosInstance.get('quotes/random')
