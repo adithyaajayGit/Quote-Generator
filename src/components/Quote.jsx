@@ -1,27 +1,26 @@
 import React from 'react'
 
 const Quote = () => {
-  return (
-    <div>
-       <div className="flex flex-col items-center p-12">
-      <button 
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4 transition duration-300 ease-in-out transform hover:scale-105"
-      >
-        Click to display Quote
-      </button>
-      <div className="w-full max-w-xl">
-        <div className="bg-white shadow-lg rounded-lg px-8 py-6 mb-4 transition duration-300 ease-in-out hover:shadow-xl">
-          <h2 className="text-xl font-semibold mb-3 text-gray-800"> Quote Description</h2>
-          <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus maxime est doloremque blanditiis libero modi hic? Aliquid quis ipsam nemo, eveniet quos saepe dolorum doloribus quasi sapiente eligendi ex.
-          Itaque, alias? Error facere maxime architecto autem, facilis mollitia quam accusamus repudiandae delectus tenetur temporibus odio at ducimus id, optio aperiam maiores tempora veritatis nam sit perspiciatis numquam et ratione.
-          Quia illum quidem nemo iusto amet obcaecati dignissimos distinctio? Dignissimos rem placeat amet, exercitationem eligendi repellat aperiam perspiciatis totam quisquam quidem unde animi cupiditate expedita vero ea at. Repellendus, tempora?
-          Explicabo eos omnis officia nihil, aut, repellat sapiente voluptatem non itaque, temporibus provident ullam repellendus modi dolorum eveniet unde excepturi quidem id magnam ex illum magni? Molestias delectus voluptatibus maxime?
-          Sunt nemo porro id ipsum impedit illo repellat dolorum sint vero et officia mollitia, maxime possimus alias ab, nulla, voluptates qui? Quis officiis ab unde fugiat dolor doloremque vel nemo?</p>
-        </div>
-      </div>
-    </div>
-    </div>
-  )
+    return (
+        <>
+
+            <div className="max-w-xl mx-auto mt-10">
+                <button
+                    className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-t transition duration-300 ease-in-out"
+                > click here to display quote
+                </button>
+
+                <div className="bg-white shadow-lg rounded-b-lg p-6 transition-all duration-300 ease-in-out">
+                    <h2 className="text-2xl font-bold text-gray-800 mb-2">Author name: </h2>
+                    <div className='flex'>
+                        <p className="text-2xl font-bold text-gray-800 mb-2"> Quote: </p>
+                        <p className="text-gray-600 text-sm leading-relaxed px-4 pt-1 "> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ea vitae facilis ab doloribus debitis fugit. Itaque fugit aliquam adipisci amet ipsam beatae quisquam sit, non deserunt. Repellat, necessitatibus eligendi?</p>
+                    </div>
+
+                </div>
+            </div>
+        </>
+    )
 }
 
 export default Quote
