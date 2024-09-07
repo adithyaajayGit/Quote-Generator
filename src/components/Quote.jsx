@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import axiosInstance from '../api/axiosConfig'
 
 const Quote = () => {
 
+    const [quote,setQuote]=useState('')
+    const [author,setAuthour]=useState('')
+
+
     const fetchrandomQuote=async()=>{
-        const response = await axiosInstance.get('quotes/random')
+        try{
+            const response = await axiosInstance.get('quotes/random')
+            const randomquote= response.data
+            setQuote(randomquote.quote)
+            setAuthour(randomquote.author)
+        }
+        catch(err){
+            console.log("error fetching data",err)
+        }
+
     }
     return (
         <>
